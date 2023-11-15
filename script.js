@@ -66,7 +66,7 @@ function cal() {
       ans = parseFloat(val1) / parseFloat(val2);
     }
   } else if (operator == "%") {
-    ans = parseFloat(val1) % parseFloat(val2);
+    ans = (parseFloat(val2) / 100) * parseFloat(val1);
   }
   document.getElementById("value").innerText = ans;
   val1 = ans;

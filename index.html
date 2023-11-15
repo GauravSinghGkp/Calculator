@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Calculator -->
+    <div id="calculator">
+      <!-- Logo -->
+      <div id="logo">
+        <h3>CALCULATOR</h3>
+      </div>
+      <!-- Display -->
+      <div id="display">
+        <p id="value"></p>
+      </div>
+
+      <!-- Buttons -->
+      <div id="button-container">
+        <div id="ac" class="buttton" onclick="cancle()">
+          <span>AC</span>
+        </div>
+
+        <div id="plus/minus" class="buttton" onclick="changeSign()">
+          <span>+/-</span>
+        </div>
+
+        <div id="modulus" class="buttton" onclick="symbol('%')">
+          <span>%</span>
+        </div>
+
+        <div id="division" class="buttton" onclick="symbol('/')">
+          <span>/</span>
+        </div>
+
+        <div id="seven" class="buttton" onclick="number('7')">
+          <span>7</span>
+        </div>
+
+        <div id="eight" class="buttton" onclick="number('8')">
+          <span>8</span>
+        </div>
+
+        <div id="nine" class="buttton" onclick="number('9')">
+          <span>9</span>
+        </div>
+
+        <div id="multiply" class="buttton" onclick="symbol('*')">
+          <span>*</span>
+        </div>
+
+        <div id="four" class="buttton" onclick="number('4')">
+          <span>4</span>
+        </div>
+
+        <div id="five" class="buttton" onclick="number('5')">
+          <span>5</span>
+        </div>
+
+        <div id="six" class="buttton" onclick="number('6')">
+          <span>6</span>
+        </div>
+
+        <div id="minus" class="buttton" onclick="symbol('-')">
+          <span>-</span>
+        </div>
+
+        <div id="one" class="buttton" onclick="number('1')">
+          <span>1</span>
+        </div>
+
+        <div id="two" class="buttton" onclick="number('2')">
+          <span>2</span>
+        </div>
+
+        <div id="three" class="buttton" onclick="number('3')">
+          <span>3</span>
+        </div>
+
+        <div id="plus" class="buttton" onclick="symbol('+')">
+          <span>+</span>
+        </div>
+
+        <div id="zero" class="buttton" onclick="number('0')">
+          <span>0</span>
+        </div>
+
+        <div id="dot" class="buttton" onclick="number('.')">
+          <span>.</span>
+        </div>
+
+        <div id="equal" class="buttton" onclick="cal()">
+          <span>=</span>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!-- <p>©Gaurav Singh</p> -->
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

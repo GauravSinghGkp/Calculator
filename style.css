@@ -94,8 +94,10 @@
   margin-left: 1px;
   margin-top: 1px;
 }
+
 #value {
   display: inline-block;
   font-size: 42px;
   margin-bottom: 10px;
+  overflow: hidden;
 }

@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body {
+}
+
 #calculator {
   margin: 50px auto;
   width: 430px;

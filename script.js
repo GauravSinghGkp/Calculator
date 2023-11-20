@@ -47,12 +47,16 @@ function cancle() {
   ans = "";
 }
 
-function symbol(val) {
-  operator = val;
-  document.getElementById("value").innerText = "";
-}
-
 function cal() {
+  if (val1 == "") {
+    operator = "";
+    val1 = val2;
+    val2 = "";
+    return;
+  }
+  if (val2 == "") {
+    return;
+  }
   if (operator == "+") {
     ans = parseFloat(val1) + parseFloat(val2);
   } else if (operator == "-") {
@@ -61,7 +65,7 @@ function cal() {
     ans = parseFloat(val1) * parseFloat(val2);
   } else if (operator == "/") {
     if (val2 == "0") {
-      ans = "Error";
+      ans = "Can't divide by 0";
     } else {
       ans = parseFloat(val1) / parseFloat(val2);
     }
@@ -73,6 +77,25 @@ function cal() {
   val2 = "";
   operator = "";
   ans = "";
+}
+
+function symbol(val) {
+  if (operator != "") {
+    if (val1 == "") {
+      operator = "";
+      val1 = val2;
+      val2 = "";
+      return;
+    } else if (val2 == "") {
+      return;
+    } else {
+      cal();
+      operator = val;
+    }
+  } else {
+    operator = val;
+    document.getElementById("value").innerText = "";
+  }
 }
 
 function changeSign() {

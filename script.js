@@ -50,8 +50,6 @@ function cancle() {
 function cal() {
   if (val1 == "") {
     operator = "";
-    val1 = val2;
-    val2 = "";
     return;
   }
   if (val2 == "") {
@@ -80,13 +78,12 @@ function cal() {
 }
 
 function symbol(val) {
+  if (val1 == "") {
+    operator = "";
+    return;
+  }
   if (operator != "") {
-    if (val1 == "") {
-      operator = "";
-      val1 = val2;
-      val2 = "";
-      return;
-    } else if (val2 == "") {
+    if (val2 == "") {
       return;
     } else {
       cal();
